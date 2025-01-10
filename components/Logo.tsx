@@ -1,10 +1,17 @@
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Logo() {
   return (
-    <Link href="/" className="text-2xl font-bold text-white">
-      Parlaye
+    <Link href="/" className="flex items-center">
+      <Image
+        src="/logo.png"
+        alt="Parlaye Logo"
+        width={120}
+        height={40}
+        className="w-auto h-auto"
+        priority
+      />
     </Link>
-  )
+  );
 }
-
