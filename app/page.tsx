@@ -41,8 +41,8 @@ export default function Home() {
           />
           <Step
             stepNumber={3}
-            heading="Track Parlays"
-            subheading="Say goodbye to perfection in parlays. Just because you miss a pick, doesn't mean you can't beat your opponent."
+            heading="Track Parlayes"
+            subheading="Say goodbye to perfection in parlayes. Just because you miss a pick, doesn't mean you can't beat your opponent."
             image="/images/step-3.png"
           />
         </div>
