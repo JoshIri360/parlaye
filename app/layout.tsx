@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Parlaye",
-  description: "Your AI-powered communication platform",
+  description: "DFS contests built by Users for Users",
 };
 
 export default function RootLayout({
