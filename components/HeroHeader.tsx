@@ -31,11 +31,15 @@ const HeroHeader = ({
       : 'text-sm sm:text-base md:text-lg';
   };
 
+  const buttonClasses = variant !== 'main'
+    ? 'before:bg-gradient-to-b before:from-[#C6F7E4] before:to-[#74F6C4] before:-m-[1px]'
+    : '';
+
   return (
     <div className="flex flex-col items-center justify-center w-full px-4 sm:px-6 md:px-8">
       {variant !== 'image' ? (
         <div className="relative mb-2 sm:mb-3">
-          <button className="relative px-2 sm:px-3 py-1 sm:py-1.5 border border-transparent rounded-full bg-clip-padding before:absolute before:inset-0 before:-z-10 before:rounded-full before:bg-gradient-to-b before:from-[#C6F7E4] before:to-[#74F6C4] before:content-[''] before:-m-[1px] bg-black">
+          <button className={`relative px-2 sm:px-3 py-1 sm:py-1.5 border-transparent rounded-full bg-clip-padding before:absolute before:inset-0 before:-z-10 before:rounded-full before:content-[''] bg-black ${buttonClasses}`}>
             <div className="flex items-center gap-1.5 sm:gap-2">
               {Icon && <Icon className="text-white w-3 h-3 sm:w-4 sm:h-4" />}
               <h3 className="text-white text-[10px] sm:text-xs whitespace-nowrap">{roundedText}</h3>

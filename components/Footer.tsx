@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-8 md:mb-0">
-            <p className="text-gray-400">&copy; 2024 Parlaye Inc.</p>
+            <p className="text-gray-400">&copy; 2025 Parlaye Inc.</p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
             <div>
