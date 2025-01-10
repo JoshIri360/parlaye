@@ -4,11 +4,10 @@ import { Gamepad2 } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center justify-center">
+    <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center justify-center" id="home">
       <div className="flex flex-col items-center justify-center mb-28 gap-20 mt-20">
-        <div className="w-full bg-black bg-dot-white/[0.2]  relative flex items-center justify-center">
-          {/* Radial gradient for the container to give a faded look */}
-          <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <div className="w-full bg-black bg-dot-white/[0.2]  relative flex items-center justify-center" id="about">
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#084F34)]"></div>
           <HeroHeader
             title="Built by Users for Users"
             subtitle="Start playing against your friends today or get matched with opponents in peer-to-peer contests."
@@ -20,7 +19,7 @@ export default function Home() {
           className="w-[15.45rem] sm:w-[20.6rem] md:w-[25.75rem] h-auto"
         />
       </div>
-      <div className="flex flex-col items-center justify-center mb-28 gap-20 w-full">
+      <div className="flex flex-col items-center justify-center mb-28 gap-20 w-full" id="how-it-works">
         <HeroHeader
           roundedText="PLAY. COMPETE. WIN."
           title="HOW IT WORKS"
@@ -48,7 +47,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center mb-28 gap-20">
+      <div className="flex flex-col items-center justify-center mb-28 gap-20" id="contact">
         <HeroHeader
           roundedText="STAY CONNECTED"
           title="OUR SOCIALS"
@@ -57,7 +56,7 @@ export default function Home() {
         />
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 sm:gap-12 md:gap-16 w-full max-w-4xl px-4">
           <a
-            href="https://discord.com"
+            href="https://discord.gg/gHqZVnR8CB"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center transform hover:scale-110 transition-transform duration-200"
@@ -69,7 +68,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/parlayeofficial/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center transform hover:scale-110 transition-transform duration-200"
@@ -81,7 +80,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/parlaye-inc/about/?viewAsMember=true"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center transform hover:scale-110 transition-transform duration-200"
@@ -93,7 +92,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://tiktok.com"
+            href="https://www.tiktok.com/@parlaye_official"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center transform hover:scale-110 transition-transform duration-200"
@@ -105,7 +104,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://x.com"
+            href="https://twitter.com/ParlayeOfficial"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center transform hover:scale-110 transition-transform duration-200"
@@ -118,7 +117,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center mb-28 gap-20">
+      <div className="flex flex-col items-center justify-center mb-28 gap-20" id="download">
         <HeroHeader
           title="DOWNLOAD THE APP"
           subtitle="Join the action! Available now on iOS and Android."
@@ -127,7 +126,7 @@ export default function Home() {
         />
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 md:gap-8">
           <a
-            href="https://tiktok.com"
+            href="https://apps.apple.com/us/app/parlaye/id1584562998"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center border-4 border-white rounded-xl overflow-hidden"
@@ -139,7 +138,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://x.com"
+            href="https://play.google.com/store/apps/details?id=com.parlaye.parlaye"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center border-4 border-white rounded-xl overflow-hidden"

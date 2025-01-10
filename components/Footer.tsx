@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -10,30 +10,55 @@ export default function Footer() {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
             <div>
-              <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Company</h3>
+              <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                Company
+              </h3>
               <ul className="mt-4 space-y-2">
-                <li><Link href="/download" className="text-gray-300 hover:text-white">Download</Link></li>
-                <li><Link href="/about" className="text-gray-300 hover:text-white">About</Link></li>
+                <li>
+                  <a
+                    href="#download"
+                    className="text-gray-300 hover:text-white"
+                  >
+                    Download
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" className="text-gray-300 hover:text-white">
+                    About
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Resources</h3>
+              <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                Resources
+              </h3>
               <ul className="mt-4 space-y-2">
-                <li><Link href="/how-it-works" className="text-gray-300 hover:text-white">How it Works</Link></li>
-                <li><Link href="/terms" className="text-gray-300 hover:text-white">Terms of Use</Link></li>
+                <li>
+                  <a
+                    href="#how-it-works"
+                    className="text-gray-300 hover:text-white"
+                  >
+                    How it Works
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
+              <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                Support
+              </h3>
               <ul className="mt-4 space-y-2">
-                <li><Link href="/privacy" className="text-gray-300 hover:text-white">Privacy Policy</Link></li>
-                <li><Link href="/contact" className="text-gray-300 hover:text-white">Contact Us</Link></li>
+                <li>
+                  <a href="#contact" className="text-gray-300 hover:text-white">
+                    Contact Us
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
